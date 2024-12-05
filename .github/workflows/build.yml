@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Check out patches
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1
 
       - name: Check out Magisk
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1
         with:
           path: Magisk
           repository: topjohnwu/Magisk
@@ -23,7 +23,7 @@ jobs:
           fetch-depth: 0
 
       - name: Check out libsu
-        uses: actions/checkout@v2
+        uses: actions/checkout@v1
         with:
           path: libsu
           repository: topjohnwu/libsu
@@ -36,7 +36,7 @@ jobs:
           java-version: '11'
 
       - name: Set up Python 3
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v1
         with:
           python-version: '3.x'
 
