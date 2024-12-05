@@ -53,7 +53,7 @@ jobs:
 
       - name: Apply libsu Patches
         run: |
-          git -C libsu apply libsu-su2suu.diff
+          git -C apply libsu-su2suu.diff
 
       - name: Build libsuu
         run: |
