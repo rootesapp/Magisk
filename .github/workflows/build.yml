@@ -95,7 +95,7 @@ jobs:
           python build.py -vr all
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v1
         with:
           name: Magisk.apk
           path: Magisk/out/app-release.apk
@@ -111,7 +111,7 @@ jobs:
           python build.py -vr all
 
       - name: Upload build artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v1
         with:
           name: Magisk-test.apk
           path: Magisk/out/app-release.apk
