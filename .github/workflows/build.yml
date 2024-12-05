@@ -48,7 +48,7 @@ jobs:
 
       - name: Set up NDK
         run: |
-          cd Magisk
+         
           python build.py ndk
 
       - name: Apply libsu Patches
