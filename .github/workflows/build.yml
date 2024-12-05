@@ -42,7 +42,7 @@ jobs:
 
       - name: Set up GitHub env
         run: |
-          ndk_ver=$(sed -n 's/^magisk.ondkVersion=//p' Magisk/gradle.properties)
+          ndk_ver=$(sed -n 's/^magisk.ondkVersion=//p' gradle.properties)
           echo ANDROID_SDK_ROOT=$ANDROID_SDK_ROOT >> $GITHUB_ENV
           echo ONDK_VERSION=$ndk_ver >> $GITHUB_ENV
 
